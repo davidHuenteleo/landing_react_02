@@ -3,6 +3,8 @@
     margin: 0 auto;
     position: relative;
     border: 0.5px solid rgb(6, 0, 0);
+
+    background-color: rgb(243, 243, 243);
 }
 
 @media (max-width: 1300px) {
