@@ -1,0 +1,40 @@
+.footer {
+  max-width: 1200px;
+  margin: 0 auto;
+  border-top: 2px solid #e5e7eb; /* equivalente a border-t-2 de Tailwind */
+  padding: 1rem 0; /* py-4 */
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;   /* centra horizontal */
+  justify-content: center; /* centra vertical */
+  text-align: center;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .footer-container {
+    flex-direction: row;          /* en pantallas grandes, organiza en fila */ /* separa íconos de otros elementos (ej. copyright) */
+  }
+}
+
+.social-links {
+  display: flex;
+  gap: 1.5rem; /* space-x-6 */
+  margin-bottom: 0.5rem; /* mb-2 */
+  justify-content: center; /* asegura que los íconos estén centrados */
+}
+
+.icon {
+  font-size: 1.8rem;
+  color: #1877f2; /* color base */
+  transition: transform 0.2s ease, color 0.2s ease;
+  cursor: pointer;
+}
+
+.icon:hover {
+  color: #145dbf;
+  transform: scale(1.1);
+}
